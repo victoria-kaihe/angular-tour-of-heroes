@@ -9,7 +9,9 @@ import { HeroService } from '../hero.service';
 })
  
 export class HeroesComponent implements OnInit {
- 
+
+  selectedHero: Hero;
+
   heroes: Hero[];
  
   constructor(private heroService: HeroService) { }
